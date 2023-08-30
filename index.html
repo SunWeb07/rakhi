@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-  body {
+body {
     font-family: 'Helvetica', sans-serif;
     background-color: #f5f5f5;
     color: #333;
@@ -11,10 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
   }
   
   .container {
+    width: 90%;
     max-width: 600px;
     padding: 20px;
     border-radius: 10px;
@@ -25,12 +26,12 @@
   
   h1 {
     color: #e74c3c;
-    margin:10px 0;
   }
   
   img.rakhi {
-    width: 150px;
-
+    width: 100%;
+    max-width: 200px;
+    margin: 20px 0;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -43,6 +44,16 @@
   .signature {
     font-weight: bold;
     margin-top: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+
+    img.rakhi {
+      max-width: 150px;
+    }
   }
 </style>
 </head>
